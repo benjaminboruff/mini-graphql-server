@@ -1,0 +1,9 @@
+{
+  "name": "mini-graphql-server",
+  "version": "1.0.0",
+  "description": "A simple zero-configuration command-line GraphQL server.",
+  "main": "index.js",
+  "author": "Benjamin H Boruff",
+  "license": "MIT",
+  "private": false
+}
