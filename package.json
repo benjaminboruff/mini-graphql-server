@@ -5,5 +5,12 @@
   "main": "index.js",
   "author": "Benjamin H Boruff",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "ava": "^1.0.0-beta.3",
+    "eslint-config-google": "^0.9.1"
+  },
+  "scripts": {
+    "test": "ava"
+  }
 }
