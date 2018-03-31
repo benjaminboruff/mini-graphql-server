@@ -1,5 +1,5 @@
 import test from 'ava';
-import message from '../dist/bin/index';
+import message from '../dist/lib/index';
 
 test('arrays are equal', t => {
 	t.deepEqual([1, 2], [1, 2]);

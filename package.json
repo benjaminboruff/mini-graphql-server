@@ -13,9 +13,9 @@
     "eslint-config-google": "^0.9.1"
   },
   "scripts": {
-    "watch": "babel src -d dist --watch",
+    "watch": "babel src/lib -d dist/lib --watch",
     "test": "ava --watch",
-    "build": "babel src -d dist"
+    "build": "babel src -d dist && mv dist/bin/mini-graphql-server.js dist/bin/mini-graphql-server && chmod u+x dist/bin/mini-graphql-server"
   },
   "babel": {
     "presets": ["env"]
@@ -25,7 +25,6 @@
       "__test__/*.test.js"
     ],
     "sources": [
-      "dist/bin/*.js",
       "dist/lib/*.js"
     ]
   }
