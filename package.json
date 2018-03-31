@@ -13,10 +13,11 @@
     "eslint-config-google": "^0.9.1"
   },
   "scripts": {
-    "start": "node ./dist/bin/mini-graphql-server",
-    "watch": "babel src/lib -d dist/lib --watch",
-    "test": "ava --watch",
-    "build": "babel src -d dist && mv dist/bin/mini-graphql-server.js dist/bin/mini-graphql-server && chmod u+x dist/bin/mini-graphql-server"
+    "start": "yarn build && node ./dist/bin/index.js",
+    "babel:watch": "babel src/lib -d dist/lib --watch",
+    "test:watch" :"ava --watch",
+    "test": "ava",
+    "build": "babel src -d dist && chmod +x dist/bin/index.js"
   },
   "babel": {
     "presets": ["env"]
@@ -41,7 +42,7 @@
   ],
   "preferGlobal": true,
   "bin": {
-    "mini-graphql-server": "./dist/bin/mini-graphql-server",
-    "mgqls": "./dist/bin/mini-graphql-server"
+    "mini-graphql-server": "./dist/bin/index.js",
+    "mgqls": "./dist/bin/index.js"
   }
 }
