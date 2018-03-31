@@ -3,9 +3,18 @@
   "version": "0.1.0",
   "description": "A simple zero-configuration command-line GraphQL server.",
   "main": "./dist/lib/index.js",
-  "author": "Benjamin H Boruff",
+  "repository": {
+    "url": "https://github.com/benjaminboruff/mini-graphql-server",
+    "type": "git"
+  },
+  "author": "Benjamin H Boruff <ben@boruff.me>",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "graphql",
+    "micro",
+    "apollo"
+  ],
   "devDependencies": {
     "ava": "^1.0.0-beta.3",
     "babel-cli": "^6.26.0",
