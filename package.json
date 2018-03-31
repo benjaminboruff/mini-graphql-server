@@ -8,9 +8,25 @@
   "private": false,
   "devDependencies": {
     "ava": "^1.0.0-beta.3",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "eslint-config-google": "^0.9.1"
   },
   "scripts": {
-    "test": "ava"
+    "watch": "babel src -d dist --watch",
+    "test": "ava --watch",
+    "build": "babel src -d dist"
+  },
+  "babel": {
+    "presets": ["env"]
+  },
+  "ava": {
+    "files": [
+      "__test__/*.test.js"
+    ],
+    "sources": [
+      "dist/bin/*.js",
+      "dist/lib/*.js"
+    ]
   }
 }
