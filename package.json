@@ -14,7 +14,7 @@
     "micro-dev": "^2.2.2"
   },
   "scripts": {
-    "start": "yarn build && node ./dist/bin/index.js",
+    "start": "yarn build && micro dist/lib/index.js",
     "babel:watch": "babel src/lib -d dist/lib --watch",
     "test:watch": "ava --watch",
     "dev:micro": "micro-dev dist/lib/index.js",
