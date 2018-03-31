@@ -2,7 +2,7 @@
   "name": "mini-graphql-server",
   "version": "1.0.0",
   "description": "A simple zero-configuration command-line GraphQL server.",
-  "main": "index.js",
+  "main": "./dist/lib/index.js",
   "author": "Benjamin H Boruff",
   "license": "MIT",
   "private": false,
@@ -13,6 +13,7 @@
     "eslint-config-google": "^0.9.1"
   },
   "scripts": {
+    "start": "node ./dist/bin/mini-graphql-server",
     "watch": "babel src/lib -d dist/lib --watch",
     "test": "ava --watch",
     "build": "babel src -d dist && mv dist/bin/mini-graphql-server.js dist/bin/mini-graphql-server && chmod u+x dist/bin/mini-graphql-server"
@@ -27,5 +28,20 @@
     "sources": [
       "dist/lib/*.js"
     ]
+  },
+  "files": [
+    "dist/lib",
+    "dist/bin"
+  ],
+  "contributors": [
+    {
+      "name": "Benjamin H Boruff",
+      "email": "ben@boruff.me"
+    }
+  ],
+  "preferGlobal": true,
+  "bin": {
+    "mini-graphql-server": "./dist/bin/mini-graphql-server",
+    "mgqls": "./dist/bin/mini-graphql-server"
   }
 }
