@@ -17,7 +17,7 @@
     "babel:watch": "babel src/lib -d dist/lib --watch",
     "test:watch" :"ava --watch",
     "test": "ava",
-    "build": "babel src -d dist && chmod +x dist/bin/index.js"
+    "build": "babel src -d dist"
   },
   "babel": {
     "presets": ["env"]
