@@ -44,10 +44,8 @@
     ]
   },
   "files": [
-    "dist/lib/schema/index.js",
-    "dist/lib/resolvers/index.js",
-    "dist/lib/index.js",
-    "dist/bin/index.js"
+    "dist/lib",
+    "dist/bin"
   ],
   "contributors": [
     {
