@@ -14,7 +14,7 @@ Currently, only a small sample of `books` are available to query by `author` and
 }
 ```
 
-*Comming  soon*: command-line schema. resolvers, and data files.
+*Comming  soon*: schema. resolvers, and data file detection in a target directory.
 
 #### Installation
 > yarn global add mini-graphql-server
