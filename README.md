@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/benjaminboruff/mini-graphql-server.svg?branch=master)](https://travis-ci.org/benjaminboruff/mini-graphql-server)
+
 # mini-graphql-server: a command-line GraphQL server
 
 
