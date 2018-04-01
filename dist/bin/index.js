@@ -16,5 +16,5 @@ var port = 3000;
 var host = '127.0.0.1';
 
 server.listen(port, host, function () {
-    console.log('mini-graphql-server http://' + host + ':' + port + ' ...');
+    console.log('mini-graphql-server http://' + host + ':' + port + ':/graphiql ...');
 });
