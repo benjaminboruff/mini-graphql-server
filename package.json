@@ -37,7 +37,7 @@
   },
   "ava": {
     "files": [
-      "__test__/*.test.js"
+      "test/*.test.js"
     ],
     "sources": [
       "dist/lib/*.js"
