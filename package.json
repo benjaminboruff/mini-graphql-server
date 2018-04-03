@@ -1,6 +1,6 @@
 {
   "name": "mini-graphql-server",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "description": "A simple zero-configuration command-line GraphQL server.",
   "main": "./dist/lib/index.js",
   "repository": {
@@ -45,7 +45,10 @@
     "sources": [
       "dist/lib/*.js"
     ],
-    "require": ["babel-register", "babel-polyfill"]
+    "require": [
+      "babel-register",
+      "babel-polyfill"
+    ]
   },
   "files": [
     "dist/lib",
