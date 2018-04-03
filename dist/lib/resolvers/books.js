@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 // Some fake data
 var _books = [{
-  title: "Harry Potter and the Sorcerer's stone",
+  title: 'Harry Potter and the Sorcerer\'s stone',
   author: 'J.K. Rowling'
 }, {
   title: 'Jurassic Park',
