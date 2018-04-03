@@ -20,7 +20,10 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "eslint-config-google": "^0.9.1",
-    "micro-dev": "^2.2.2"
+    "micro-dev": "^2.2.2",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2",
+    "test-listen": "^1.1.0"
   },
   "scripts": {
     "start": "yarn build && micro dist/lib/index.js",
@@ -37,11 +40,12 @@
   },
   "ava": {
     "files": [
-      "__test__/*.test.js"
+      "test/*.test.js"
     ],
     "sources": [
       "dist/lib/*.js"
-    ]
+    ],
+    "require": ["babel-register", "babel-polyfill"]
   },
   "files": [
     "dist/lib",
